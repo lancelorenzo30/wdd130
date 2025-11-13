@@ -1,5 +1,6 @@
 :root {
     --primary-color: black;
+    --secondary-color: #eee;
 }
 
 * {
@@ -18,7 +19,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     display: block;
     padding: 20px;
     font-size: large;
@@ -59,6 +60,14 @@ aside {
     padding: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 1rem;
+    left: 7.5rem;
+    color: var(--secondary-color);
 }
 
 aside img {
@@ -76,6 +85,6 @@ footer {
 
 .box {
     margin: 1.5rem auto;
-    background-color: #eee;
+    background-color: var(--secondary-color);
     color: var(--primary-color);
 }
