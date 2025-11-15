@@ -51,6 +51,7 @@ nav, section p, footer p {
 section h2 {
     padding: 10px;
     text-align: center;
+    color: var(--background-color);
 }
 
 
