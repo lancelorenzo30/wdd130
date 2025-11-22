@@ -1,6 +1,6 @@
 :root {
     --primary-color: black;
-    --secondary-color: #eee;
+    --secondary-color: #bfbcbc;
 }
 
 * {
@@ -13,27 +13,37 @@ body {
     line-height: 2;
 }
 
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
+    display: flex;
+    justify-content: space-around;
     background-color: darkblue;
     padding: 10px;
 }
 
 nav a {
     color: var(--secondary-color);
-    display: block;
+    text-decoration: none;
+    font-weight: 900;
     padding: 20px;
     font-size: large;
 }
 
 main {
     max-width: 840px;
-    margin: 0 auto;
+    margin: 1rem;
+    grid-column: 1;
 }
 
 h1 {
     color: darkblue;
     margin-left: 1rem;
     font-size: 2.5rem;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 main img {
@@ -43,7 +53,7 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 0 1rem 1rem;
+    margin: .5rem 0 1rem 1rem;
 }
 
 main p {
@@ -61,6 +71,7 @@ aside {
     border: 1px solid rgb(0 0 0 / 10%);
     text-align: center;
     position: relative;
+    grid-column: 2;
 }
 
 aside h2 {
@@ -71,12 +82,11 @@ aside h2 {
 }
 
 aside img {
-    width: 200px;
+    width: 250px;
     height: auto;
 }
 
 footer {
-    margin-top: 40px;
     border-top: 1px solid var(--primary-color);
     text-align: center;
 }
@@ -87,4 +97,10 @@ footer {
     margin: 1.5rem auto;
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
+
+.grid {
+    display: grid;
+    max-width: 840px;
+    margin: 0 auto;
 }
