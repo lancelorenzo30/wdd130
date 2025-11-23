@@ -43,6 +43,7 @@ div {
 .two {
     background-color: #ace;
     height: 100px;
+    justify-content: center;
 }
 
 .container3 {
