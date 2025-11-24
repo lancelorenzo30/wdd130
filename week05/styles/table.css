@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    margin: 3rem auto;
+    border-collapse: collapse;
+    background-color: rgb(209, 202, 202);
+    border: 4px solid black;
+}
+
+th, td {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid rgb(107, 103, 103);
+}
+
+thead tr, tfoot tr {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
