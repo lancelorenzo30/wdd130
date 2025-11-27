@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1 {
+    color: darkblue;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
+fieldset {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(198, 193, 193);
+}
+
+div {
+    display: grid;
+    padding: 5px;
+}
+
+span {
+    color: darkblue;
+    font-weight: 800;
+}
+
+label, input {
+    margin: 5px;
+}
+
+input, select {
+    padding: 5px;
+}
+
+code {
+    background-color: rgb(44, 43, 43);
+    color: white;
+    margin: 3px auto;
+    padding: 1rem;
+    width: 350px;
+}
+
+button {
+    width: 450px;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: darkblue;
+    display: grid;
+}
+
+footer {
+    text-align: center;
+}
