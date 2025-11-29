@@ -28,23 +28,28 @@ header, main, footer {
 
 header {
     display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 
 header img {
     grid-column: 1;
     justify-self: center;
+    width: 100px;
+    height: auto;
 }
 
 header nav {
     grid-column: 2;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
 }
 
 header nav a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 3rem;
+    font-size: 1rem;
     padding: .5rem;
     text-align: center;
 }
@@ -56,6 +61,20 @@ header nav a:hover {
 h1, h2 {
     font-family: var(--heading-font);
     background-color: var(--background-contrast1);
+}
+
+iframe {
+    margin: 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 800px;
+    gap: 1rem;
 }
 
 nav, section p, footer p {
@@ -88,6 +107,36 @@ footer p {
 
 /* Class Selectors */
 
+.contacts h1 {
+    text-align: center;
+    color: var(--background-color);
+}
+
+.contacts p {
+    text-align: center;
+    margin: 3px;
+}
+
+.identity {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 5px;
+}
+
+#radio {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#radio p {
+    display: grid;
+    text-align: start;
+}
+
+.message {
+    display: grid;
+}
+
 .history {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
@@ -97,8 +146,15 @@ footer p {
 }
 
 .adventure {
+    margin: .5rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+}
+
+.employees {
+    margin: .5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .one {
