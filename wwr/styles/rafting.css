@@ -94,6 +94,20 @@ section img {
     height: auto;
 }
 
+button {
+    margin: 1rem;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 5px;
+    border-style: hidden;
+    background-color: var(--background-contrast1);
+    color: var(--text-color);
+}
+
+button:hover {
+    color: var(--background-color);
+}
+
 footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -104,9 +118,96 @@ footer p {
     grid-column: 2;
     align-content: center;
     justify-self: center;
+    font-size: small;
 }
 
 /* Class Selectors */
+
+.invite {
+    position: absolute;
+    left: 30%;
+    bottom: 300px;
+    text-align: center;
+}
+
+.invite p {
+    font-style: italic;
+    font-size: 22px;
+    opacity: 70%;
+}
+
+.invite a {
+    text-decoration: none;
+    background-color: var(--background-color);
+    margin: 3rem 2rem;
+    padding: 10px;
+    color: var(--text-color);
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.invite a:hover {
+    color: var(--background-color);
+    background-color: var(--background-contrast1);
+}
+
+.email1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem auto;
+    justify-items: center;
+}
+
+.email2 label, .email2 input, .email2 button {
+    margin: 1rem;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.email2 label {
+    font-size: 3rem;
+}
+
+.email2 input {
+    padding: 1rem;
+}
+
+.email2 {
+    display: grid;
+    background-color: #2a4135;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.info1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: right;
+    align-items: center;
+}
+
+.info1 p, .info2 p {
+    margin: 1rem;
+    padding: 2rem;
+    border: 2px solid ;
+}
+
+.info1 img, .info2 img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.info2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: end;
+    align-items: center;
+    margin: 1rem;
+}
 
 .contacts h1 {
     text-align: center;
