@@ -183,7 +183,7 @@ footer p {
 
 .email2 {
     display: grid;
-    background-color: #202b26;
+    background-color: var(--background-contrast2);
     border-radius: 5px;
     border-style: none;
 }
